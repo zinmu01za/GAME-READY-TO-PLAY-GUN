@@ -1,0 +1,165 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Settings_Menu.gd" type="Script" id=1]
+
+[node name="SettingsMenu" type="Popup"]
+anchor_left = 0.448
+anchor_top = 0.16
+anchor_right = 0.448
+anchor_bottom = 0.16
+margin_left = 0.199951
+margin_top = -1.52588e-05
+margin_right = 659.2
+margin_bottom = 592.0
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 7.0
+margin_bottom = -128.0
+color = Color( 0.262745, 0.258824, 0.258824, 1 )
+
+[node name="SettingTabs" type="TabContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 2.0
+margin_bottom = -137.0
+tab_align = 0
+
+[node name="Video" type="Tabs" parent="SettingTabs"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="MarginContainer" type="MarginContainer" parent="SettingTabs/Video"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 25
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 25
+
+[node name="Videosettings" type="GridContainer" parent="SettingTabs/Video/MarginContainer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 628.0
+margin_bottom = 394.0
+custom_constants/vseparation = 21
+columns = 2
+
+[node name="DisplayModeLabel" type="Label" parent="SettingTabs/Video/MarginContainer/Videosettings"]
+margin_top = 3.0
+margin_right = 83.0
+margin_bottom = 17.0
+size_flags_horizontal = 2
+text = "DisplayMode"
+
+[node name="DisplayOptionButton" type="OptionButton" parent="SettingTabs/Video/MarginContainer/Videosettings"]
+margin_left = 506.0
+margin_right = 602.0
+margin_bottom = 20.0
+size_flags_horizontal = 10
+text = "Windowed"
+items = [ "Windowed", null, false, 0, null, "Fullscreen", null, false, 1, null ]
+selected = 0
+
+[node name="VsyncLabel" type="Label" parent="SettingTabs/Video/MarginContainer/Videosettings"]
+margin_top = 54.0
+margin_right = 299.0
+margin_bottom = 68.0
+text = "Vsync"
+
+[node name="VsyncBtn" type="CheckButton" parent="SettingTabs/Video/MarginContainer/Videosettings"]
+margin_left = 303.0
+margin_top = 41.0
+margin_right = 602.0
+margin_bottom = 81.0
+
+[node name="DisplayFpsLabel" type="Label" parent="SettingTabs/Video/MarginContainer/Videosettings"]
+margin_top = 115.0
+margin_right = 299.0
+margin_bottom = 129.0
+text = "Display FPS"
+
+[node name="DisplayFpsBtn" type="CheckButton" parent="SettingTabs/Video/MarginContainer/Videosettings"]
+margin_left = 303.0
+margin_top = 102.0
+margin_right = 602.0
+margin_bottom = 142.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingTabs/Video/MarginContainer/Videosettings"]
+margin_left = 299.0
+margin_top = 163.0
+margin_right = 299.0
+margin_bottom = 163.0
+size_flags_horizontal = 10
+
+[node name="Audio" type="Tabs" parent="SettingTabs"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="MarginContainer" type="MarginContainer" parent="SettingTabs/Audio"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 25
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 25
+
+[node name="AudioSettings" type="GridContainer" parent="SettingTabs/Audio/MarginContainer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 628.0
+margin_bottom = 394.0
+custom_constants/vseparation = 21
+columns = 2
+
+[node name="MastervolLadel" type="Label" parent="SettingTabs/Audio/MarginContainer/AudioSettings"]
+margin_top = 1.0
+margin_right = 97.0
+margin_bottom = 15.0
+text = "Master Volume"
+
+[node name="MastervolSlider" type="HSlider" parent="SettingTabs/Audio/MarginContainer/AudioSettings"]
+margin_left = 353.0
+margin_right = 603.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 250, 0 )
+size_flags_horizontal = 10
+size_flags_vertical = 1
+min_value = -50.0
+max_value = 0.0
+value = -10.0
+
+[node name="MusicvolLadel" type="Label" parent="SettingTabs/Audio/MarginContainer/AudioSettings"]
+margin_top = 38.0
+margin_right = 97.0
+margin_bottom = 52.0
+text = "Music Volume"
+
+[node name="MusicvolSlider" type="HSlider" parent="SettingTabs/Audio/MarginContainer/AudioSettings"]
+margin_left = 353.0
+margin_top = 37.0
+margin_right = 603.0
+margin_bottom = 53.0
+rect_min_size = Vector2( 250, 0 )
+size_flags_horizontal = 10
+size_flags_vertical = 1
+min_value = -50.0
+max_value = 0.0
+value = -10.0
+
+[connection signal="item_selected" from="SettingTabs/Video/MarginContainer/Videosettings/DisplayOptionButton" to="." method="_on_DisplayOptionButton_item_selected"]
+[connection signal="toggled" from="SettingTabs/Video/MarginContainer/Videosettings/VsyncBtn" to="." method="_on_VsyncBtn_toggled"]
+[connection signal="toggled" from="SettingTabs/Video/MarginContainer/Videosettings/DisplayFpsBtn" to="." method="_on_DisplayFpsBtn_toggled"]
+[connection signal="value_changed" from="SettingTabs/Audio/MarginContainer/AudioSettings/MastervolSlider" to="." method="_on_MastervolSlider_value_changed"]
+[connection signal="value_changed" from="SettingTabs/Audio/MarginContainer/AudioSettings/MusicvolSlider" to="." method="_on_MusicvolSlider_value_changed"]

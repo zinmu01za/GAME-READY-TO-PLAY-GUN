@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ready or Not Valley combat ost.mp3-a149da9dea0247e340604f52b31fb9c2.mp3str"
+
+[deps]
+
+source_file="res://music/Ready or Not Valley combat ost.mp3"
+dest_files=[ "res://.import/Ready or Not Valley combat ost.mp3-a149da9dea0247e340604f52b31fb9c2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

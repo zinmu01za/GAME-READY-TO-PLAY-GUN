@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/reload.ogg-71a62c470737a2581526a8aa57ef4bff.oggstr"
+
+[deps]
+
+source_file="res://data 2/audios/weapons/glock_17/reload.ogg"
+dest_files=[ "res://.import/reload.ogg-71a62c470737a2581526a8aa57ef4bff.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

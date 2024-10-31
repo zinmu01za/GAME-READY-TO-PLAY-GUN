@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ready or Not Soundtrack - 213 Park homes Combat Theme.mp3-5cae68f9ab5647b3b3a1fda97ebea419.mp3str"
+
+[deps]
+
+source_file="res://music/Ready or Not Soundtrack - 213 Park homes Combat Theme.mp3"
+dest_files=[ "res://.import/Ready or Not Soundtrack - 213 Park homes Combat Theme.mp3-5cae68f9ab5647b3b3a1fda97ebea419.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

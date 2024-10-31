@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Rainbow Six Siege original outbreak sound track offical OST (MAIN MENU THEME).mp3-f9247f87fe04356e970ecda56330b363.mp3str"
+
+[deps]
+
+source_file="res://music/Rainbow Six Siege original outbreak sound track offical OST (MAIN MENU THEME).mp3"
+dest_files=[ "res://.import/Rainbow Six Siege original outbreak sound track offical OST (MAIN MENU THEME).mp3-f9247f87fe04356e970ecda56330b363.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

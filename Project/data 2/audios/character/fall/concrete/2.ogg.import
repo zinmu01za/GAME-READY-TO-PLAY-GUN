@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/2.ogg-ee7f11373899e3968f8abaf922f38875.oggstr"
+
+[deps]
+
+source_file="res://data 2/audios/character/fall/concrete/2.ogg"
+dest_files=[ "res://.import/2.ogg-ee7f11373899e3968f8abaf922f38875.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

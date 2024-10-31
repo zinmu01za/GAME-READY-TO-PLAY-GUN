@@ -1,0 +1,25 @@
+[gd_scene format=2]
+
+[node name="RigidBody" type="RigidBody"]
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Spatial2" type="Spatial" parent="."]
+
+[node name="Particles" type="Particles" parent="Spatial2"]
+
+[node name="Particles2" type="Particles" parent="Spatial2"]
+
+[node name="Particles3" type="Particles" parent="Spatial2"]
+
+[node name="Spatial3" type="Spatial" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Spatial3"]
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="Spatial3"]
